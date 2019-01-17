@@ -1,0 +1,136 @@
+@charset "utf-8";
+/*CSS Document */
+body,p,ul,ol,dl,dd,h1,h2,h3,h4,h5,h6,td,input,select,option,textarea{
+	margin:0;
+	padding:0;
+}
+*{
+	padding:0;
+	margin:0;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+}
+body{
+	font-family:"微软雅黑";
+}
+img{
+	display: block;
+	border:none;
+}
+input{
+	outline:none;		
+	border:none;
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+
+/* ----------------------------------section ---------------------*/
+section{
+	width: 100%;
+	height: 250px;
+	background:url(../imgs/010.jpg) no-repeat;
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+	text-align: center;
+}
+section .mask{
+	width: 100%;
+	height: 250px;
+	background-color: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	top:0;
+	left:0;
+}
+section .word{
+	width: 200px;;
+	height: 55px;
+	text-align: center;
+	position: absolute;
+	top:30%;
+	left:42%;
+
+}
+section h3 {
+    font-size: 35px;
+    padding: 20px 0 12px 0;
+    position: absolute;
+	text-align: center;
+	font-family: "Playfair Display", serif;
+	color:#fff;
+}
+section .line{
+	display:inline-block;
+	width: 110px;
+	height: 3px;
+	border-top:1px solid #fff;
+	border-bottom:1px solid #fff;
+	position: absolute;
+	top:121%;
+	left:20%;
+}
+        
+.conBox{
+    width: 94%;
+    height:600px;
+    margin:0 auto;
+    margin-top:60px;
+ }
+
+
+
+		.js{width:90%; margin:10px auto 0 auto; }
+		.js p{ padding:5px 0; font-weight:bold; overflow:hidden;  }
+		.js p span{ float:right; }
+		.js p span a{ color:#f00; text-decoration:underline;   }
+        .js textarea{ height:50px;  width:98%; padding:5px; border:1px solid #ccc;
+             border-top:2px solid #aaa;  border-left:2px solid #aaa;  }
+
+
+		/* 本例子css */
+        .sideMenu{  border:1px solid #ddd;  }
+        .sideMenu .lineOne{
+            /* margin-bottom:20px; */
+        }
+		.sideMenu h3{ 
+            height: 50px;
+            line-height: 50px;
+            padding-left: 15px;
+            border-top: 1px solid #ddd;
+            /* background: #f4f4f4; */
+            cursor: pointer;
+            font: normal 14px/32px "Microsoft YaHei";
+		}
+        .sideMenu h3 em{ float:right; display:block; width:40px; height:32px;  
+             background:url(images/icoAdd.png) 16px 12px no-repeat; cursor:pointer; }
+		.sideMenu h3.on em{ background-position:16px -57px; }
+        .sideMenu ul{ padding:10px 10px; color:#999; display:none; /* 默认都隐藏 */ }
+        .sideMenu ul li{
+            border-top:1px solid #ddd;
+        }      
+
+
+
+@media screen and (max-width:1200px){
+	.conBox{
+		width:55%;
+	}
+}
+
+@media screen and (max-width:996px){
+	.conBox{
+		width:70%;
+	}
+}
+@media screen and (max-width:600px){
+	.conBox{
+		width:90%;
+	}
+}
+

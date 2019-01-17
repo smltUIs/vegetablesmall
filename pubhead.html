@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>login</title>
+	<link rel="stylesheet" type="text/css" href="css/pubhead.css">
+</head>
+<body>
+    <!-- -----------------------------header--------------------------- -->
+    <header>
+		<div id="logo"><img src="imgs/logo.png" alt=""></div>
+			<ul id="nav" class="nav clearfix">
+			<li class="nLi">
+				<h3><a href="http://www.SuperSlide2.com" target="_blank">HOME</a></h3>
+				<ul class="sub">
+						<li><a href="#">Home Version 1</a></li>
+						<li><a href="#">Home Version 2</a></li>
+						<li><a href="#">Home Version 3</a></li>
+						<li><a href="#">Home Version 4</a></li>
+				</ul>
+			</li>
+			<li class="nLi">
+					<h3><a href="http://www.SuperSlide2.com" target="_blank">SHOP</a></h3>
+					<ul class="sub">
+						<li><a href="#">Shop List</a></li>
+						<li><a href="#">Shop List Version 1</a></li>
+						<li><a href="#">Shop List Version 2</a></li>
+						<li><a href="#">Shop List Version 3</a></li>
+						<li><a href="#">Shop Detail Version 1</a></li>
+						<li><a href="# ">Shop Detail Version 2</a></li>
+						<li><a href="# ">Shop Detail Version 3</a></li>
+						<li><a href="# ">Shop Detail Version 4</a></li>
+					</ul>
+			</li>
+			<li class="nLi">
+					<h3><a href="http://www.SuperSlide2.com" target="_blank">ABOUT</a></h3>
+			</li>
+			<li class="nLi ">
+					<h3><a href="http://www.SuperSlide2.com" target="_blank">BLOG</a></h3>
+					<ul class="sub">
+						<li><a href="#">Blog List Version 1</a></li>
+						<li><a href="#">Blog List Version 2</a></li>
+						<li><a href="#">Blog List Version 3</a></li>
+						<li><a href="#">Blog Detail</a></li>
+						<li><a href="#">Blog Detail</a></li>
+						<li><a href="# ">Blog Detail Version 1</a></li>
+						<li><a href="# ">Blog Detail Version 2</a></li>
+					</ul>
+			</li>
+			<li class="nLi">
+					<h3><a href="http://www.SuperSlide2.com" target="_blank">CONTACT</a></h3>
+					<ul class="sub">
+						<li><a href="#">FEATURE</a></li>
+						<li><a href="#">404 Page</a></li>
+						<li><a href="#">Faq</a></li>
+						<li><a href="#">Login</a></li>
+						<li><a href="#">Register</a></li>
+					</ul>
+			</li>
+		</ul>
+		<div id="usd">
+			<div class="select">
+				<select name="" id="">
+					<option>USD</option>
+					<option>VND</option>
+					<option>EUR</option>
+					<option>JPY</option>
+				</select>
+				<img src="imgs/search.jpg" alt="">
+				<img src="imgs/shopcar.jpg" alt="">
+			</div>
+			<div id="subnav">
+				<img src="imgs/nav.jpg" alt="">
+			</div>
+		</div>
+    </header>
+</body>
+</html>
+<script type="text/javascript" src="js/jquery1.42.min.js"></script>
+<script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
+<script id="jsID" type="text/javascript">			
+			jQuery("#nav").slide({ 
+				type:"menu",// 效果类型，针对菜单/导航而引入的参数（默认slide）
+				titCell:".nLi", //鼠标触发对象
+				targetCell:".sub", //titCell里面包含的要显示/消失的对象
+				triggerTime:0, //鼠标延迟触发时间（默认150）
+				returnDefault:true //鼠标移走后返回默认状态，例如默认频道是“预告片”，鼠标移走后会返回“预告片”（默认false）
+			});
+</script>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>register</title>
+    <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+        <div class="hd"></div>
+        <section>
+            <div class="mask"></div>
+            <div class="word">
+                <h3>My Account</h3>
+                <span class="line"></span>
+            </div>
+        </section>
+        <div class="log">
+            <div class="logBox">
+                    <h2>Register</h2>
+                    <p>Your Name *</p>
+                    <input class="ep" type="text"/>
+                    <p>Your Email * </p>
+                    <input class="ep" type="text"/>
+                    <p>Password *</p>
+                    <input class="ep" type="text"/>
+                    <p>Repeat Password * </p>
+                    <input class="ep" type="text"/>
+                    <div class="rempwd">
+                        <a href="#"><input type="checkbox"/>Privacy Policy Agreement?</a>
+                    </div>
+                    <input class="submit" type="submit" value="SUBMIT">
+            </div>     
+        </div>
+        <div class="fot"></div>
+</body>
+</html>
+<script type="text/javascript" src="js/jquery1.42.min.js"></script>
+<script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$(".hd").load("pubhead.html", function(){return false;});
+		$(".fot").load("pubfoot.html", function(){return false;});
+	})	
+</script>
